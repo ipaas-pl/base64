@@ -1,0 +1,51 @@
+<!-- POST method -->
+<form class="fade-in">
+    <input type="hidden" name="method" value="POST">
+
+
+    <span>
+        <code>Sourcecode</code> from <code>github: organisation/repository</code> which should be executed on environment.
+    </span>
+
+    <fieldset>
+
+        <label for="sourcecode">
+            Sourcecode:
+        </label>
+        <button class="del_sourcecode del_button">-</button>
+
+        <select name="sourcecode" id="sourcecode" class="add_list">
+            <option value="">...</option>
+            <option value="goethe-pl/app">goethe-pl/app</option>
+        </select>
+        <input type="text" name="add_sourcecode" id="add_sourcecode" class="add_input" value="">
+        <button class="add_sourcecode add_button">+</button>
+    </fieldset>
+
+    <span>
+        Infrastructure <code>plesk</code> + <code>VPS</code> + <code>Domain</code>
+    </span>
+
+    <fieldset>
+        <label for="domain">
+            Domain:
+        </label>
+        <button class="del_domain del_button">-</button>
+
+        <select name="domain" id="domain" class="add_list">
+<!--            <option value="">...</option>-->
+            <option value="test.goethe.pl">test.goethe.pl</option>
+            <option value="test.goethe.pl">app.goethe.pl</option>
+        </select>
+        <input type="text" name="add_domain" id="add_domain" class="add_input" value="">
+        <button class="add_domain add_button">+</button>
+    </fieldset>
+
+    <p>
+    <fieldset>
+        <input type="submit" name="submit" class="submit" value="Run">
+    </fieldset>
+    </p>
+
+</form>
+

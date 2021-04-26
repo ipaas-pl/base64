@@ -1,14 +1,14 @@
 {
   "head": [
     "//www.faas.ovh/css/fade-in.css",
-    "//www.faas.ovh/form/form.js",
-    "//www.faas.ovh/form/form.css",
-    "//www.faas.ovh/form/inputs.css"
+    "form/form.js",
+    "form/form.css",
+    "form/inputs.css"
   ],
   "#forms": {
     "//www.faas.ovh/form/app.html": [
-      "//www.faas.ovh/form/submit.js",
-      "//www.faas.ovh/form/edit_list.js"
+      "form/submit.js",
+      "form/edit_list.js"
     ]
   },
   "#messages": [
@@ -18,12 +18,12 @@
     "//logo.faas.ovh/4/cover.png"
   ],
   "#menu": [
-    "//www.faas.ovh/html/menu.html"
+    "html/menu.html"
   ],
   "#usermenu": [
-    "//www.faas.ovh/html/user_menu.html"
+    "html/user_menu.html"
   ],
   "footer": [
-    "//www.faas.ovh/html/footer.html"
+    "html/footer.html"
   ]
 }

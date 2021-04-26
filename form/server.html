@@ -1,0 +1,92 @@
+<!-- POST method -->
+<form class="fade-in">
+    <input type="hidden" name="method" value="POST">
+
+    <h2>Infrastructure</h2>
+
+    <span>
+        IP  <code>Server</code> where the <code>sourcecode</code> will be deployed
+    </span>
+    <fieldset>
+        <label for="ip">Ip X.X.X.X:</label>
+        <button class="del_ip del_button">-</button>
+
+        <select name="ip" id="ip" class="add_list">
+            <option value="127.0.0.1">127.0.0.1</option>
+            <option value="127.123.121.11">127.123.121.119</option>
+        </select>
+        <input type="text" name="add_ip" id="add_ip" class="add_input" value="">
+        <button class="add_ip add_button">+</button>
+    </fieldset>
+
+
+    <h2>Environment</h2>
+
+    <span>
+        Connect to environment on  <code>Server</code> to <code>internet domain</code>
+    </span>
+
+    <fieldset>
+        <label for="environment">Environment:</label>
+        <button class="del_environment del_button">-</button>
+
+        <select name="environment" id="environment" class="add_list">
+            <option value="1">python v3.8 + Django</option>
+            <option value="2">python v3.8 + Flask</option>
+            <option value="3">python + FastAPI</option>
+            <option value="4">nodejs + express</option>
+            <option value="5">nodejs + Vue</option>
+            <option value="6">php5 + Apache2</option>
+            <option value="7">php7.4 + Apache2</option>
+            <option value="8">php7.4 + NGINX</option>
+            <option value="9">MySQL</option>
+            <option value="10">MariaDB</option>
+            <option value="11">PostgresSQL</option>
+        </select>
+        <input type="text" name="add_environment" id="add_environment" class="add_input" value="">
+        <button class="add_environment add_button">+</button>
+    </fieldset>
+
+
+    <h2>Sourcecode</h2>
+
+    <span>
+        Select <code>github: organisation/repository</code> which should be executed on environment.
+    </span>
+
+    <fieldset>
+        <label for="sourcecode">Sourcecode</label>
+        <button class="del_sourcecode del_button">-</button>
+
+        <select name="sourcecode" id="sourcecode" class="add_list">
+            <option value="code/extension.js">extension.js</option>
+            <option value="code/server.js">faas-ovh/form/server.js</option>
+            <option value="code/server.php">faas-ovh/form/server.php</option>
+        </select>
+        <input type="text" name="add_sourcecode" id="add_sourcecode" class="add_input" value="">
+        <button class="add_sourcecode add_button">+</button>
+    </fieldset>
+
+
+    <article autofocus>
+
+        <p>
+        </p>
+
+    </article>
+
+    <!--        <label for="code">code</label>-->
+    <textarea name="code"
+              id="code"
+              class="code"
+              style="display: none"
+              autofocus></textarea>
+
+    <p>
+    <fieldset>
+        <input type="submit" name="submit" class="submit" value="Run">
+    </fieldset>
+    </p>
+
+</form>
+
