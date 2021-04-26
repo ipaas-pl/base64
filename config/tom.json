@@ -1,0 +1,8 @@
+{
+  "head": [
+    "//www.faas.ovh/css/fade-in.css",
+    "//www.faas.ovh/form/form.js",
+    "//www.faas.ovh/form/form.css",
+    "//www.faas.ovh/form/inputs.css"
+  ]
+}

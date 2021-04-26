@@ -128,8 +128,26 @@
     <script>
         // Load core of application
         jl.target(<?php
-$subdomain_encoded = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
-echo base64_decode($subdomain_encoded);
+            include_once('Base58.php');
+
+            function url($filename)
+            {
+                if(strlen($filename) > 7){
+                    exit();
+                }
+                $json = file_get_contents("config/" . $filename . ".json");
+//    echo $json;
+//                $encoded = (new SulacoTech\Base58())->encode($json);
+//    echo $encoded;
+//    return "http://" . $encoded . ".base58.ipaas.pl/";
+//                return "http://" . $encoded . ".base64.ipaas.pl/";
+                return $json;
+            }
+
+
+            $subdomain_encoded = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
+            echo url($subdomain_encoded);
+//            echo base58_decode($subdomain_encoded);
           ?>);
     </script>
 
